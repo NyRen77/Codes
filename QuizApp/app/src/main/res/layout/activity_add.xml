@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.AddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Question" />
+
+        <TextView
+            android:id="@+id/answer1View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/question"
+            android:text="Answer1:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer1View" />
+
+        <TextView
+            android:id="@+id/answer2View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer1"
+            android:text="Answer2:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer2View" />
+
+        <TextView
+            android:id="@+id/answer3View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer2"
+            android:text="Answer3:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer3View" />
+
+        <TextView
+            android:id="@+id/answer4View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer3"
+            android:text="Answer4:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answer4View" />
+
+
+        <RadioGroup
+            android:id="@+id/rgGoodAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/answer4"
+            android:layout_alignTop="@+id/answer1View"
+            android:layout_toRightOf="@+id/okBTN">
+
+            <RadioButton
+                android:id="@+id/r1BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/r2BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/r3BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/r4BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/question"
+            android:layout_alignEnd="@+id/rgGoodAnswer"
+            android:layout_alignRight="@+id/rgGoodAnswer"
+            android:text="Right answer:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/okBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:onClick="onOkButtonClick"
+            android:text="OK" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
